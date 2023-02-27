@@ -57,7 +57,7 @@ public void setup(String browser)
 		indexPage=new IndexPage();
 		homePage=indexPage.logIn(prop.getProperty("username"),prop.getProperty("password"));
 		homePage.sortOrder();
-		Assert.assertTrue(true);
+		Assert.assertTrue(false);
 	}
 	
 

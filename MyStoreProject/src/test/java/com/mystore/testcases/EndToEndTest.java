@@ -61,7 +61,7 @@ public class EndToEndTest extends BaseClass
 			checkoutOver=address.credentialS(prop.getProperty("firstname"),prop.getProperty("lastname"),prop.getProperty("code"));
 			complete=checkoutOver.clickFinishBtn(getDriver());
 			String actualText=complete.getTopText();
-			String expectedText="THANK YOU FOR YOUR ORDER2";
+			String expectedText="THANK YOU FOR YOUR ORDER";
 			Assert.assertEquals(actualText, expectedText);	
 		}
 }
